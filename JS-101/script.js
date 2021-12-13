@@ -80,4 +80,3 @@ function nameFunc(params) {
 nameFunc()
 
 //console.log(test); // test local scope olduğu için çalışmaz
-
