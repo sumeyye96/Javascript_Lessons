@@ -1,46 +1,41 @@
 //Write a function findMax that takes three arguments and returns their maximum.
 
-let var1 = prompt("birinci sayıyı giriniz")
-let var2 = prompt("ikinci sayıyı giriniz")
-let var3 = prompt("üçüncü sayıyı giriniz")
-
-
-function findMax(param1, param2, param3) {
-    if (param1 > param2 && param1 > param3){
-        return param1
-    } else if (param1 > param2 && param1 < param3){
-        return param3
-    } else if (param1 < param2 && param1 > param3){
-        return param2
+function findMax(x,y,z) {
+  
+    if (x>y && x>z) {
+        return `${x} is the maximum`
+    } else if (y>x && y>z) {
+        return `${y} is the maximum`
+    } else if (z>x && z>y) {
+        return `${z} is the maximum`
     }
 }
-
-findMax(var1, var2, var3); 
-
+console.log(findMax(8,9,3))
 
 //Declare a function name evensAndOdds. It takes a positive integer (from prompt) as parameter and prints out the number even or odd.
 
+let number = prompt("Pozitif bir doğal sayı giriniz.")
 
-function evensAndOdds(param) {
-    if (param/2 === 0){
-        return "number is even";
+function evensAndOdds(number) {
+    if (number %2 ===0) {
+        return `${number} sayısı çifttir.`
+    } else {
+        return `${number} sayısı tektir.`
+
     }
 }
-
-evensAndOdds(5)
-
-
+console.log(evensAndOdds(number))
 
 //Write a function which generates a randomUserIp. Ex: 168.127.25.2
 
-function userIP() {
-    let num1 = Math.random()
-    let num2 = Math.random()
-    let num3 = Math.random()
-    let num4 = Math.random()
-    return num1 + "." + num2 + "." + 
+function randomUserIp() {
+    let param1= Math.floor(Math.random() * 1000);
+    let param2= Math.floor(Math.random() * 1000);
+    let param3= Math.floor(Math.random() * 100);
+    let param4= Math.floor(Math.random() * 10);
+return `Ip adresiniz : ${param1}.${param2}.${param3}.${param4}`
 }
-
+console.log(randomUserIp())
 
 
 
@@ -48,12 +43,9 @@ function userIP() {
 //Rewrite your function to print a result according to your name ending : Ex. "Mustafa'dan sevgilerle" , "Ali'den sevgilerle", "Fatoş'tan sevgilerle".
 //Challenge: take names from prompt.
 
-
-function name(firstName, lastName) {
-    return firstName + " " + lastName + "," + "adoınızdaki karakter sayısı " + firstName.length 
+let adSoyad = prompt("Adınızı ve soyadınızı giriniz.")
+function fullName(adSoyad) {
+    console.log(`${adSoyad}'dan sevgilerle.`)
+    return adSoyad.length
 }
-
-
-function name(firstName, lastName) {
-    
-}
+console.log(fullName(adSoyad))
