@@ -1,0 +1,24 @@
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.center {
+    text-align: center;
+    list-style-position: inside;
+  }
+  .card{
+      max-width: 600px;
+  }
+
+  #search {
+border-color: violet;
+  }
+
+  /* #btn:hover {
+    color:aquamarine
+
+  } */
+
+ 
+
+ 
