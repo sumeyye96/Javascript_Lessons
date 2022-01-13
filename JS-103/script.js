@@ -1,4 +1,4 @@
-let raining = false;
+let raining = true;
 
 if (raining) {
   console.log("şemdsiyeni al");

@@ -59,13 +59,14 @@ calculate2(); // 7
 calculate2(); // 7
 
 function namer(param1, param2) {
-  console.log(param1, param2);
+  console.log("burada paramaetreler gelecek ==>",param1, param2);
 }
 namer("ahmet"); // ikinciyi vermezsek undefined olur
 
 function naming(param1 = "ali", param2 = "erkek") {
   console.log(`${param1} bir ${param2}`);
 }
+
 
 naming("ahmet"); // ahmet bir erkek
 naming("şeyda", "kız"); // şeyda bir kız
@@ -92,7 +93,7 @@ console.log(nameFunc(6)); // 12  //üstünde de çalışır
 function nameFunc(value) {
   return value * 2;
 }
-console.log(nameFunc(6)); // 12  // altında da
+console.log(`namefunctan ${nameFunc(6)} gelen değer`,nameFunc(6)); // 12  // altında da
 
 //PARAMETRELERE TEKRAR CALIS
 let yenideger = nameFunc(8) + 7; // 23 //BURAYI TEKRAR CALIS

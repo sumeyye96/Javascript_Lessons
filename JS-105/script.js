@@ -152,5 +152,3 @@ newArray[0] = 3
 newArray[1] = 5
 
 console.log(newArray)
-      
-      

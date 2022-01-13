@@ -28,6 +28,9 @@ const myCar = {
     km:86000,
     fuel:"lpg"
 }
+
+15 == "15"  // true
+15 === "15"  // false
 myCar.vites = "auto";
 myCar.km=87000;
 console.log(myCar)

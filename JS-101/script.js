@@ -18,7 +18,7 @@ console.log(firstNameMehmet , age , "yaşında");
 
 
 //Pascal Case
-let FirstName = "Mehmet";  // geçerli
+let FirstName = "ali";  // geçerli
 
 //Camel Case
 let firstName = "Mehmet";  //tavsiye
