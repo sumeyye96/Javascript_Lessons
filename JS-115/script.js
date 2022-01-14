@@ -31,7 +31,7 @@ myBtn.addEventListener("click", function (event) {
     myH1.innerHTML = "Merhaba Dünya"
 })
 */
-
+/*
 const input = document.getElementById("temp");
 const resultPara = document.querySelector("p#result")
 
@@ -64,4 +64,4 @@ function handleInput (e) {
     let kelvinVal = inputVal + 273.15 ;
     resultPara.innerHTML = `Kelvin değeri : ${kelvinVal}`;
     //console.log(input.value)  // bu da çalışır
-}
+}*/
