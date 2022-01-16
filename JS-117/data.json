@@ -1,0 +1,14 @@
+[{
+  "_id": {
+    "$oid": "61432ebf4693ba3f9ceb515d"
+  },
+  "roles": [
+    {
+      "$oid": "6143155109a2f11664c7ca8b"
+    }
+  ],
+  "username": "musty",
+  "email": "musty@musty.com",
+  "password": "$2a$08$2EGRU4kDsmmDqmDLJ9aoYOtgg6NxCxHOibhxTyLFN6I/U3ewRHfM.",
+  "__v": 1
+}]

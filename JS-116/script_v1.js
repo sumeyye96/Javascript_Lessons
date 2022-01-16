@@ -7,9 +7,32 @@ let list = document.querySelector(".list-group");
 
 let localDB = [];
 
+function showItems() {
+
+    let storage = localStorage.getItem("todolist");
+    if(storage){
+        console.log(storage.split(","))
+        localDB = storage.split(",");
+        list.innerHTML = "";
+        for (let i = 0; i < localDB.length; i++) {
+            const element = localDB[i];
+            //list.appendChild(element)
+            list.insertAdjacentHTML("afterbegin", element)
+        }
+    }
+    
+
+
+    // console.log(localDB)
+    // for (let i = 0; i < localDB.length; i++) {
+    //     const element = localDB[i];
+    //     list.appendChild(element)
+        
+    // }
+}
+showItems();
+
 addBtn.onclick = function (e) {
-    localDB = [...localStorage.getItem("todolist")];
-    console.log(localDB)
     let inputVal = input.value;
     if(inputVal){
         let listItem = document.createElement("li");
@@ -24,11 +47,12 @@ addBtn.onclick = function (e) {
         spanBtn.addEventListener("click", deleteItem);
         listItem.appendChild(spanInput);
         listItem.appendChild(spanBtn);
-        list.appendChild(listItem);
-        localDB.push(listItem)
+        localDB.push(listItem.outerHTML)
+        //list.appendChild(listItem);
+        localStorage.setItem("todolist",localDB)
         input.value = "";
+        showItems();
     }
-    localStorage.setItem("todolist",localDB)
     //console.log(localDB)
 }
 
@@ -52,15 +76,18 @@ function updateItem(e) {
 
 }
 
-//localStorage.setItem("user", "mustafa")
-//let userName = localStorage.getItem("user")
-//localStorage.removeItem("user")
+// localStorage.setItem("user", "mustafa")
+// let userName = localStorage.getItem("user")
+// localStorage.removeItem("user")
+// localStorage.clear();
 
-let localStore = localStorage.getItem("todolist")
-console.log(localStore)
+//let localStore = localStorage.getItem("todolist")
+//console.log(localStore)
 
-for (let i = 0; i < localStore.length; i++) {
-    const element = localStore[i];
-    console.log(element)
-    //list.appendChild(element);
-}
+// for (let i = 0; i < localStore.length; i++) {
+//     const element = localStore[i];
+//     console.log(element)
+//     //list.appendChild(element);
+// }
+
+
