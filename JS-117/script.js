@@ -91,3 +91,6 @@ localStorage.setItem("selam", JSON.stringify(arr));
 
 let selam = localStorage.getItem("selam")
 console.log(JSON.parse(selam));
+
+
+import {Staff} from '../JS-118/person.js';

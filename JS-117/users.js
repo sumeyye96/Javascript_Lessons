@@ -1,4 +1,4 @@
-const user = `{
+ const useres = `{
     "salutation": "Miss.",
     "firstName": "Geneva",
     "middleName": "Beth",
