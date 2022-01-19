@@ -1,0 +1,33 @@
+[{
+    "salutation": "Miss.",
+    "firstName": "Geneva",
+    "middleName": "Beth",
+    "lastName": "Collins",
+    "office": "High School",
+    "roomNumber": 488,
+    "phoneExt": 392,
+    "emailPersonal": "geneva.collins@personal.net",
+    "status": true
+  },
+  {
+    "salutation": "Miss.",
+    "firstName": "Joni",
+    "middleName": "Krista",
+    "lastName": "Cardenas",
+    "office": "Elementary",
+    "roomNumber": 481,
+    "phoneExt": 319,
+    "emailPersonal": "joni.cardenas@personal.me",
+    "status": false
+  },
+  {
+    "salutation": "Miss.",
+    "firstName": "Cote",
+    "middleName": "Nielsen",
+    "lastName": "Frye",
+    "office": "High School",
+    "roomNumber": 337,
+    "phoneExt": 246,
+    "emailPersonal": "cote.frye@personal.name",
+    "status": true
+  }]

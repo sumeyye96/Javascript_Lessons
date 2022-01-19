@@ -9,15 +9,17 @@
 </head>
 <body>
     <div class="temp">
-        <label for="temp">Celcius : </label>
-        <input type="number" name="temp" id="temp" >
+        <label for="temp" id="celciusLabel">Celcius : </label>
+        <input type="number" name="celcius" id="temp" >
+
     </div>
+
     <div>
         <p id="result"></p>
     </div>
     <div id="main">
         <h1 id="title" onclick="this.innerHTML = 'Merhaba Dünya' ; this.style.color = 'red' " >Hello World!</h1>
-        <p onclick="handleClick(this)" id="hint">This is a simple paragraph.</p>
+        <button onclick="handleTemp()" class="btn" id="hint">This is a simple paragraph.</button>
     </div>
     <div class="card">
         <h1 class='title' id='first-title'>First Title <span>span</span></h1>
@@ -27,5 +29,6 @@
       </div>
     <span class="btn">Artır</span>
     <script src="script.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
